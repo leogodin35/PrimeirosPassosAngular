@@ -1,6 +1,9 @@
-<p>editar-produto works!</p>
+<p>Edição de Produto</p>
 
-
-<input type="text" value="{{produto.id}}"><br>
-<input type="text" value="{{produto.nome}}"><br>
-<button (click)="salvar()">Salvar</button>
+<form (submit)="salvar()">
+    <input type="text" name="id" [(ngModel)]="produto.id"><br>
+    <input required type="text" name="nome" [(ngModel)]="produto.nome" [class.alerta]="produto.nome.length > 15"><br>
+    <div [style.display]="produto.nome.length > 15 ? 'block' : 'none'">Evite nomes com mais de 15 caracteres.</div>
+    <input type="submit" value="Salvar">
+</form>
+Div: <div [textContent]="debug"></div>

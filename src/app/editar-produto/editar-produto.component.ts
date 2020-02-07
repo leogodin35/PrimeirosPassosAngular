@@ -28,4 +28,8 @@ export class EditarProdutoComponent implements OnInit {
   salvar() {
     alert(this.produto.nome);
   }
+
+  get debug(){
+    return JSON.stringify(this.produto);
+  }
 }
