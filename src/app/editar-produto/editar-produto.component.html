@@ -2,7 +2,7 @@
 
 <form (submit)="salvar()">
     <input type="text" name="id" [(ngModel)]="produto.id"><br>
-    <input required type="text" name="nome" [(ngModel)]="produto.nome" [class.alerta]="produto.nome.length > 15"><br>
+    <input upperCase required type="text" name="nome" [(ngModel)]="produto.nome" [class.alerta]="produto.nome.length > 15"><br>
     <div [style.display]="produto.nome.length > 15 ? 'block' : 'none'">Evite nomes com mais de 15 caracteres.</div>
     <input type="submit" value="Salvar">
 </form>
