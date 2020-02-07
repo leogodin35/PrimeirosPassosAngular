@@ -9,6 +9,7 @@ import { ListaProdutosComponent } from './lista-produtos/lista-produtos.componen
 import { ProdutosComponent } from './produtos/produtos.component';
 import { EditarProdutoComponent } from './editar-produto/editar-produto.component';
 import { UppercaseDirective } from './uppercase.directive';
+import { ProdutoService } from './produto.service';
 
 const appRoutes: Routes = [
   { path: 'produtos', component: ProdutosComponent},
@@ -29,7 +30,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [ProdutoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
