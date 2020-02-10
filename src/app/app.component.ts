@@ -10,6 +10,11 @@ import { Produto } from './produto';
 export class AppComponent {
   produtos: Produto[] = [];
   title = 'loja-devmedia';
+  
+  public exibirConteudo = false;
+  public toggleConteudo() {
+    this.exibirConteudo = !this.exibirConteudo;
+  } 
 
   constructor() {
     let p = new Produto();

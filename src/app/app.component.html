@@ -3,3 +3,7 @@
 </h1>
 <router-outlet></router-outlet>
 
+<br>
+<button (click)="toggleConteudo()">Toggle</button>
+<br>
+<h2 *ngIf="exibirConteudo">Conteúdo oculto!</h2>
