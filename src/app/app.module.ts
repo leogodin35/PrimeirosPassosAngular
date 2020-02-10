@@ -11,11 +11,13 @@ import { EditarProdutoComponent } from './editar-produto/editar-produto.componen
 import { UppercaseDirective } from './uppercase.directive';
 import { ProdutoService } from './produto.service';
 import { ContadorComponent } from './contador/contador.component';
+import { ImagemComponent } from './imagem/imagem.component';
 
 const appRoutes: Routes = [
   { path: 'produtos', component: ProdutosComponent},
   { path: 'produtos/:id', component: EditarProdutoComponent},
   { path: 'contador', component: ContadorComponent},
+  { path: 'imagem', component: ImagemComponent},
 ];
 
 @NgModule({
@@ -25,7 +27,8 @@ const appRoutes: Routes = [
     ProdutosComponent,
     EditarProdutoComponent,
     UppercaseDirective,
-    ContadorComponent
+    ContadorComponent,
+    ImagemComponent
   ],
   imports: [
     BrowserModule,
