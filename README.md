@@ -8,6 +8,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 /produtos/:id
 /contador
 /imagem
+/lista-livros
+/produto
 
 ## Development server
 

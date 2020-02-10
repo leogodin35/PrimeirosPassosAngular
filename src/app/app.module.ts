@@ -19,7 +19,7 @@ const appRoutes: Routes = [
   { path: 'produtos/:id', component: EditarProdutoComponent},
   { path: 'contador', component: ContadorComponent},
   { path: 'imagem', component: ImagemComponent},
-  { path: 'lista-livros', component: ListaLivrosComponent},
+  { path: 'lista-livros', component: ListaLivrosComponent}
 ];
 
 @NgModule({
